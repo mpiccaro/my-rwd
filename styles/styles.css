@@ -11,13 +11,13 @@
  
  /* ----- Basic styling ----- */
  
- body {
+body {
   background-color: lightblue;
 }
 
 #page-wrapper {
   background-color: white;
-  width: 768px;
+  max-width: 960px;
   margin: auto;
 }
 
@@ -42,7 +42,20 @@ footer {
   clear:both;
 }
 
-/* ----- Left-Sided Nav Menu ----- */
+/* ----- Ad Styling ----- */
+
+.wide-skyscaper-ad {
+  width: 160px;
+  height: 600px;
+  background-color: silver;
+}
+
+/* ----- Three-Column Fixed Layout ----- */
+
+
+#page-wrapper {
+  width: 960px;
+}
 
 nav {
   float: left;
@@ -53,7 +66,14 @@ nav {
 
 #content {
   float: left;
-  width: 593px;
+  width: 625px;
+  -mox-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: left;
+  width: 160px;
   -mox-box-sizing: border-box;
   box-sizing: border-box;
 }
