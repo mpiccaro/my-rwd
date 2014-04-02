@@ -37,3 +37,23 @@ nav ul {
   padding: 3px 10px 3px 10px;
   list-style-type: none;
 }
+
+footer {
+  clear:both;
+}
+
+/* ----- Left-Sided Nav Menu ----- */
+
+nav {
+  float: left;
+  width: 175px;
+  -mox-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#content {
+  float: left;
+  width: 593px;
+  -mox-box-sizing: border-box;
+  box-sizing: border-box;
+}
