@@ -1,16 +1,16 @@
 /**
- * ==========================================================================
- * style. css - Global styles for the MyRWD website
- * ==========================================================================
- *
- * Created March 23, 2014
- *
- * Authored by Michele Piccaro
- *
- */
- 
- /* ----- Basic styling ----- */
- 
+* ==========================================================================
+* style. css - Global styles for the MyRWD website
+* ==========================================================================
+*
+* Created March 23, 2014
+*
+* Authored by Michele Piccaro
+*
+*/
+
+/* ----- Basic styling ----- */
+
 body {
   background-color: lightblue;
 }
@@ -50,30 +50,45 @@ footer {
   background-color: silver;
 }
 
-/* ----- Three-Column Fixed Layout ----- */
-
-
-#page-wrapper {
-  width: 960px;
+/* ----- One-Column Mobile Layout ----- */
+#fluid-columns, nav, #content, #sidebar {
+  width: 100%;
 }
 
-nav {
-  float: left;
-  width: 175px;
-  -mox-box-sizing: border-box;
-  box-sizing: border-box;
+@media all and (min-width: 525px) {
+  /* ----- Two-Column Fluid Layout ----- */
+  #page-wrapper {
+    width: 100%;
+  }
+  
+  nav {
+    float: left;
+    width: 21.875%;
+    -mox-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  #content {
+    float: left;
+    width: 78.125%;
+    -mox-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  #sidebar {
+    float: left;
+    width: 160px;
+    -mox-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
-#content {
-  float: left;
-  width: 625px;
-  -mox-box-sizing: border-box;
-  box-sizing: border-box;
+@media all and (min-width: 960px) {
+  #page-wrapper {
+    width:960px;
+  }
+  #fluid-columns {
+    width:800px;
 }
-
-#sidebar {
-  float: left;
-  width: 160px;
-  -mox-box-sizing: border-box;
-  box-sizing: border-box;
+}
 }
